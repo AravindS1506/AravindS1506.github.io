@@ -1,0 +1,499 @@
+/* Site-specific design layer. The theme's shared styles remain gem-owned. */
+:root {
+  --global-bg-color: #f7f9f8;
+  --global-text-color: #192d3b;
+  --global-text-color-light: #58707d;
+  --global-theme-color: #087d83;
+  --global-hover-color: #075e66;
+  --global-hover-text-color: #ffffff;
+  --global-card-bg-color: #ffffff;
+  --global-divider-color: #dce8e7;
+  --global-footer-bg-color: #152c3b;
+  --global-footer-text-color: #d5e5e5;
+  --global-footer-link-color: #ffffff;
+  --folio-soft: #e7f2f0;
+  --folio-warm: #e2a85b;
+  --folio-shadow: 0 16px 50px rgba(17, 53, 68, 0.06);
+}
+
+html[data-theme="dark"] {
+  --global-bg-color: #101f29;
+  --global-text-color: #e9f2f0;
+  --global-text-color-light: #a3bbc0;
+  --global-theme-color: #74d4d0;
+  --global-hover-color: #a0e6df;
+  --global-hover-text-color: #10232b;
+  --global-card-bg-color: #172c36;
+  --global-divider-color: #34515a;
+  --global-footer-bg-color: #0b1922;
+  --global-footer-text-color: #b5cdd0;
+  --global-footer-link-color: #e9f2f0;
+  --folio-soft: #1b3b43;
+  --folio-warm: #efbe7d;
+  --folio-shadow: 0 16px 50px rgba(0, 0, 0, 0.12);
+}
+
+body {
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  letter-spacing: -0.012em;
+}
+
+body.fixed-top-nav {
+  padding-top: 68px;
+}
+
+.navbar {
+  min-height: 68px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+}
+
+.navbar .navbar-brand {
+  font-size: 1.05rem;
+  font-weight: 750;
+  letter-spacing: -0.045em;
+  color: var(--global-text-color);
+}
+
+.navbar .nav-link {
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: 0.005em;
+}
+
+.navbar .nav-item.active .nav-link {
+  color: var(--global-theme-color);
+}
+
+.folio-content {
+  padding: 1.8rem 0 6rem;
+}
+
+.folio-content h1,
+.folio-content h2,
+.folio-content h3,
+.folio-content p {
+  margin-top: 0;
+}
+
+.folio-content h1,
+.folio-content h2,
+.folio-content h3 {
+  color: var(--global-text-color);
+  letter-spacing: -0.055em;
+}
+
+.folio-content p {
+  line-height: 1.75;
+}
+
+.folio-eyebrow {
+  color: var(--global-theme-color);
+  font-size: 0.72rem;
+  font-weight: 800;
+  letter-spacing: 0.16em;
+  line-height: 1.4;
+  text-transform: uppercase;
+}
+
+.folio-period,
+.folio-spark {
+  color: var(--folio-warm);
+}
+
+.folio-hero {
+  display: grid;
+  grid-template-columns: minmax(0, 1.15fr) minmax(290px, 0.85fr);
+  align-items: center;
+  gap: 2.5rem;
+  min-height: 480px;
+}
+
+.folio-hero h1,
+.folio-page-intro h1 {
+  font-size: clamp(2.9rem, 6vw, 5.25rem);
+  font-weight: 760;
+  line-height: 1.06;
+  margin: 1.2rem 0 1.25rem;
+}
+
+.folio-lede {
+  max-width: 690px;
+  font-size: clamp(1.15rem, 2vw, 1.38rem);
+  font-weight: 450;
+  line-height: 1.55 !important;
+}
+
+.folio-hero-detail {
+  max-width: 520px;
+  color: var(--global-text-color-light);
+  font-size: 0.96rem;
+}
+
+.folio-actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.8rem;
+  margin-top: 2rem;
+}
+
+.folio-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1.2rem;
+  padding: 0.75rem 1.2rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 9px;
+  font-size: 0.88rem;
+  font-weight: 700;
+  text-decoration: none !important;
+  transition:
+    transform 160ms ease,
+    background-color 160ms ease;
+}
+
+.folio-button:hover {
+  transform: translateY(-2px);
+}
+
+.folio-button:focus-visible,
+.folio-card--link:focus-visible,
+.folio-content a:focus-visible {
+  outline: 3px solid var(--folio-warm);
+  outline-offset: 4px;
+}
+
+.folio-button--primary {
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color) !important;
+}
+
+.folio-button--primary:hover {
+  background: var(--global-hover-color);
+  color: var(--global-hover-text-color) !important;
+}
+
+.folio-button--secondary {
+  background: transparent;
+  color: var(--global-theme-color) !important;
+}
+
+.folio-button--secondary:hover {
+  background: var(--folio-soft);
+}
+
+.folio-hero-art {
+  position: relative;
+  display: grid;
+  place-items: center;
+  width: 100%;
+  min-height: 370px;
+  overflow: hidden;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 22px;
+  background:
+    radial-gradient(circle at 76% 22%, rgba(226, 168, 91, 0.25), transparent 24%),
+    linear-gradient(145deg, var(--folio-soft), var(--global-card-bg-color));
+}
+
+.folio-art-orbit {
+  position: absolute;
+  width: 265px;
+  height: 265px;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 50%;
+  opacity: 0.32;
+}
+
+.folio-art-orbit--one {
+  transform: rotate(-25deg) scaleX(1.25);
+}
+
+.folio-art-orbit--two {
+  transform: rotate(52deg) scaleX(0.7);
+}
+
+.folio-art-core {
+  position: relative;
+  z-index: 1;
+  display: grid;
+  place-items: center;
+  width: 140px;
+  height: 140px;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 50%;
+  background: var(--global-card-bg-color);
+  box-shadow: var(--folio-shadow);
+  color: var(--global-text-color);
+  font-size: 3rem;
+  font-weight: 750;
+  letter-spacing: -0.08em;
+}
+
+.folio-art-core span {
+  position: absolute;
+  top: 19px;
+  right: 24px;
+  color: var(--folio-warm);
+  font-size: 0.8rem;
+}
+
+.folio-art-label {
+  position: absolute;
+  bottom: 23px;
+  color: var(--global-text-color-light);
+  font-size: 0.62rem;
+  font-weight: 700;
+  letter-spacing: 0.2em;
+}
+
+.folio-section {
+  margin-top: 3.5rem;
+}
+
+.folio-section-heading {
+  display: flex;
+  align-items: end;
+  gap: 2rem;
+  margin-bottom: 1.5rem;
+}
+
+.folio-section-heading h2 {
+  margin: 0;
+  font-size: 2rem;
+}
+
+.folio-section-line {
+  flex: 1;
+  height: 1px;
+  margin-bottom: 0.6rem;
+  background: var(--global-divider-color);
+}
+
+.folio-grid {
+  display: grid;
+  gap: 1.15rem;
+}
+
+.folio-grid--two {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.folio-grid--three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.folio-card {
+  display: block;
+  padding: 1.8rem;
+  border: 1px solid var(--global-divider-color);
+  border-radius: 16px;
+  background: var(--global-card-bg-color);
+  box-shadow: var(--folio-shadow);
+}
+
+.folio-card--link {
+  color: inherit !important;
+  text-decoration: none !important;
+  transition:
+    transform 180ms ease,
+    border-color 180ms ease;
+}
+
+.folio-card--link:hover {
+  transform: translateY(-5px);
+  border-color: var(--global-theme-color);
+}
+
+.folio-card-number {
+  display: inline-block;
+  margin-bottom: 1.35rem;
+  color: var(--global-theme-color);
+  font-size: 0.69rem;
+  font-weight: 750;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+}
+
+.folio-card h2,
+.folio-card h3 {
+  margin-bottom: 0.55rem;
+  font-size: 1.4rem;
+  font-weight: 720;
+}
+
+.folio-card h3 span {
+  float: right;
+  color: var(--global-theme-color);
+}
+
+.folio-card p,
+.folio-timeline p {
+  margin-bottom: 0;
+  color: var(--global-text-color-light);
+  font-size: 0.94rem;
+}
+
+.folio-page-intro {
+  max-width: 800px;
+  padding: 2.3rem 0 3.4rem;
+}
+
+.folio-page-intro h1 {
+  font-size: clamp(2.8rem, 5.5vw, 4.7rem);
+}
+
+.folio-note {
+  margin-top: 1.5rem;
+  padding: 1rem 1.2rem;
+  border-left: 3px solid var(--global-theme-color);
+  border-radius: 0 9px 9px 0;
+  background: var(--folio-soft);
+  color: var(--global-text-color-light);
+  font-size: 0.88rem;
+}
+
+.folio-timeline {
+  border-top: 1px solid var(--global-divider-color);
+}
+
+.folio-timeline-item {
+  display: grid;
+  grid-template-columns: 155px minmax(0, 1fr);
+  gap: 1.5rem;
+  padding: 2rem 0;
+  border-bottom: 1px solid var(--global-divider-color);
+}
+
+.folio-timeline-date {
+  color: var(--global-theme-color);
+  font-size: 0.84rem;
+  font-weight: 700;
+}
+
+.folio-timeline h2 {
+  margin: 0.8rem 0;
+  font-size: 1.55rem;
+}
+
+.folio-tag {
+  display: inline-block;
+  padding: 0.32rem 0.65rem;
+  border-radius: 99px;
+  background: var(--folio-soft);
+  color: var(--global-theme-color);
+  font-size: 0.7rem;
+  font-weight: 700;
+}
+
+.folio-project {
+  overflow: hidden;
+}
+
+.folio-project-visual {
+  display: grid;
+  place-items: center;
+  height: 175px;
+  margin: -1.8rem -1.8rem 1.6rem;
+  color: var(--global-theme-color);
+  font-size: 3.2rem;
+  font-weight: 760;
+  letter-spacing: -0.1em;
+}
+
+.folio-project-visual--a {
+  background: linear-gradient(140deg, var(--folio-soft), var(--global-card-bg-color));
+}
+
+.folio-project-visual--b {
+  background: linear-gradient(140deg, var(--global-card-bg-color), var(--folio-soft));
+}
+
+.folio-project .folio-tag {
+  margin-top: 1.4rem;
+}
+
+.folio-stack {
+  display: grid;
+  gap: 1rem;
+}
+
+.folio-post {
+  display: flex;
+  align-items: end;
+  justify-content: space-between;
+  gap: 2rem;
+}
+
+.folio-post .folio-card-number {
+  margin-bottom: 0.6rem;
+}
+
+.folio-read-link {
+  flex: none;
+  font-size: 0.82rem;
+  font-weight: 700;
+}
+
+.folio-empty {
+  max-width: 700px;
+  padding: 3rem;
+}
+
+.folio-empty-symbol {
+  display: block;
+  margin-bottom: 1.2rem;
+  color: var(--folio-warm);
+  font-size: 2.3rem;
+}
+
+@media (max-width: 780px) {
+  .folio-hero {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+
+  .folio-hero-art {
+    min-height: 260px;
+  }
+
+  .folio-grid--three {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 600px) {
+  .folio-content {
+    padding-top: 0.7rem;
+  }
+
+  .folio-grid--two,
+  .folio-timeline-item {
+    grid-template-columns: 1fr;
+  }
+
+  .folio-page-intro {
+    padding: 1.5rem 0 2rem;
+  }
+
+  .folio-timeline-item {
+    gap: 0.5rem;
+  }
+
+  .folio-post {
+    display: block;
+  }
+
+  .folio-read-link {
+    display: inline-block;
+    margin-top: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .folio-card--link,
+  .folio-button {
+    transition: none;
+  }
+}

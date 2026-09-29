@@ -1,34 +1,21 @@
 ---
-layout: about
-title: about
-permalink: /
-subtitle: <a href='#'>Affiliations</a>. Address. Contacts. Motto. Etc.
-
-profile:
-  align: right
-  image: prof_pic.jpg
-  image_circular: false # crops the image to make it circular
-  more_info: >
-    <p>555 your office number</p>
-    <p>123 your address street</p>
-    <p>Your City, State 12345</p>
-
-selected_papers: true # includes a list of papers marked as "selected={true}"
-social: true # includes social icons at the bottom of the page
-
-announcements:
-  enabled: true # includes a list of news items
-  scrollable: true # adds a vertical scroll bar if there are more than 3 news items
-  limit: 5 # leave blank to include all the news in the `_news` folder
-
-latest_posts:
-  enabled: true
-  scrollable: true # adds a vertical scroll bar if there are more than 3 new posts items
-  limit: 3 # leave blank to include all the blog posts
+layout: default
+title: About
+permalink: /about/
+nav: true
+nav_order: 1
+description: More about Aravind S.
 ---
 
-Write your biography here. Tell the world about yourself. Link to your favorite [subreddit](https://www.reddit.com). You can put a picture in, too. The code is already in, just name your picture `prof_pic.jpg` and put it in the `img/` folder.
+<div class="folio-page-intro">
+  <p class="folio-eyebrow">01 / About</p>
+  <h1>A little about me<span class="folio-period">.</span></h1>
+  <p class="folio-lede">The story behind my work, interests, and what I am exploring next.</p>
+</div>
 
-Put your address / P.O. box / other info right below your picture. You can also disable any of these elements by editing `profile` property of the YAML header of your `_pages/about.md`. Edit `_bibliography/papers.bib` and Jekyll will render your [publications page](/al-folio/publications/) automatically.
+<div class="folio-grid folio-grid--two">
+  <section class="folio-card"><span class="folio-card-number">01</span><h2>My background</h2><p>Your introduction goes here. Add your background, education, and the path that brought you to your current work.</p></section>
+  <section class="folio-card"><span class="folio-card-number">02</span><h2>What drives me</h2><p>Share the questions you enjoy working on, the topics you care about, and the kind of impact you hope to make.</p></section>
+</div>
 
-Link to your social media connections, too. This theme is set up to use [Font Awesome icons](https://fontawesome.com/) and [Academicons](https://jpswalsh.github.io/academicons/), like the ones below. Add your Facebook, Twitter, LinkedIn, Google Scholar, or just disable all of them.
+<div class="folio-note">This page is a placeholder. Personal details and a photo can be added in the next content pass.</div>
