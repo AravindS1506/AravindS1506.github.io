@@ -1,65 +1,15 @@
 ---
-layout: page
-title: projects
+layout: default
+title: Projects
 permalink: /projects/
-description: A growing collection of your cool projects.
 nav: true
 nav_order: 3
-display_categories: [work, fun]
-horizontal: false
+description: Selected projects by Aravind S.
 ---
 
-<!-- pages/projects.md -->
-<div class="projects">
-{% if site.enable_project_categories and page.display_categories %}
-  <!-- Display categorized projects -->
-  {% for category in page.display_categories %}
-  <a id="{{ category }}" href=".#{{ category }}">
-    <h2 class="category">{{ category }}</h2>
-  </a>
-  {% assign categorized_projects = site.projects | where: "category", category %}
-  {% assign sorted_projects = categorized_projects | sort: "importance" %}
-  <!-- Generate cards for each project -->
-  {% if page.horizontal %}
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-  {% endfor %}
+<div class="folio-page-intro"><p class="folio-eyebrow">03 / Projects</p><h1>Things I've made<span class="folio-period">.</span></h1><p class="folio-lede">A home for projects, experiments, and work in progress.</p></div>
 
-{% else %}
-
-<!-- Display projects without categories -->
-
-{% assign sorted_projects = site.projects | sort: "importance" %}
-
-  <!-- Generate cards for each project -->
-
-{% if page.horizontal %}
-
-  <div class="container">
-    <div class="row row-cols-1 row-cols-md-2">
-    {% for project in sorted_projects %}
-      {% include projects_horizontal.liquid %}
-    {% endfor %}
-    </div>
-  </div>
-  {% else %}
-  <div class="row row-cols-1 row-cols-md-3">
-    {% for project in sorted_projects %}
-      {% include projects.liquid %}
-    {% endfor %}
-  </div>
-  {% endif %}
-{% endif %}
+<div class="folio-grid folio-grid--two">
+  <article class="folio-card folio-project"><div class="folio-project-visual folio-project-visual--a" aria-hidden="true"><span>01</span></div><span class="folio-card-number">Project placeholder / 01</span><h2>Project title</h2><p>Describe the problem, your approach, and the outcome in a few concise sentences.</p><span class="folio-tag">Topic or technology</span></article>
+  <article class="folio-card folio-project"><div class="folio-project-visual folio-project-visual--b" aria-hidden="true"><span>02</span></div><span class="folio-card-number">Project placeholder / 02</span><h2>Another project</h2><p>Introduce another piece of work here. A link, image, and technical details can be added later.</p><span class="folio-tag">Topic or technology</span></article>
 </div>
