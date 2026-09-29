@@ -4,14 +4,17 @@ title: Experience
 permalink: /experience/
 nav: true
 nav_order: 2
-description: Experience and career milestones of Aravind S.
+description: Aravind Seshadri's engineering, research, and teaching experience.
 ---
 
-<div class="folio-page-intro"><p class="folio-eyebrow">02 / Experience</p><h1>The journey so far<span class="folio-period">.</span></h1><p class="folio-lede">A timeline of the work, people, and opportunities that have shaped my path.</p></div>
+<div class="folio-page-intro"><p class="folio-eyebrow">02 / Experience</p><h1>The journey so far<span class="folio-period">.</span></h1><p class="folio-lede">Engineering, research, and mentoring across machine learning and autonomous systems.</p></div>
 
 <div class="folio-timeline">
-  <article class="folio-timeline-item"><div class="folio-timeline-date">Present</div><div><span class="folio-tag">Current role</span><h2>Role title · Organization</h2><p>Add the scope of your role, key responsibilities, and one or two meaningful outcomes.</p></div></article>
-  <article class="folio-timeline-item"><div class="folio-timeline-date">Earlier</div><div><span class="folio-tag">Previous experience</span><h2>Role title · Organization</h2><p>Add a previous role, internship, research experience, or another milestone.</p></div></article>
+  <article class="folio-timeline-item"><div class="folio-timeline-date">Jul 2025 – Present</div><div><span class="folio-tag">Professional · Bengaluru</span><h2>Machine Learning Engineer · Adobe</h2><p>Working as a machine learning engineer at Adobe. More details about this role will be shared when they are ready.</p></div></article>
+  <article class="folio-timeline-item"><div class="folio-timeline-date">Dec 2024 – Jun 2025</div><div><span class="folio-tag">Research · IIT Kanpur</span><h2>Undergraduate Research Assistant · AirComp</h2><p>With Dr. Ajit K. Chaturvedi, studied low-complexity receiver architectures for over-the-air computation and developed a heuristic vector decomposition approach to reduce the number of RF chains.</p></div></article>
+  <article class="folio-timeline-item"><div class="folio-timeline-date">Dec 2024 – Jun 2025</div><div><span class="folio-tag">Research · IIT Kanpur</span><h2>Undergraduate Research Project · Multi-Agent Networks</h2><p>With Dr. Twinkle Tripathy, studied influence enhancement in opinion dynamics using signal flow graphs, Kron reduction, and optimization; evaluated the approach on real and simulated networks.</p></div></article>
+  <article class="folio-timeline-item"><div class="folio-timeline-date">May – Aug 2024</div><div><span class="folio-tag">Internship · Noida</span><h2>Media and Data Science Research Intern · Adobe</h2><p>Benchmarked vision-language models including CLIP, BLIP, and GLIP; curated a dataset spanning vectors, layouts, and webpages; and fine-tuned a question-aware vision transformer with contrastive learning.</p></div></article>
+  <article class="folio-timeline-item"><div class="folio-timeline-date">May – Jul 2023</div><div><span class="folio-tag">Research · SURGE</span><h2>Vision-Based Autonomous UAV Landing and Tracking</h2><p>Built an OpenCV ArUco marker detection pipeline and PID trajectory controller; simulated drone landing and leader-follower tracking in CoppeliaSim and tested with DJI Tello drones.</p></div></article>
 </div>
 
-<div class="folio-note">Dates, organizations, and achievements are placeholders for the next content pass.</div>
+<div class="folio-note">I also served as a teaching assistant for Control Systems Analysis at IIT Kanpur, mentored junior students on technical projects, and supported first-year students as an academic mentor.</div>
