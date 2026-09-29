@@ -2,16 +2,16 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: Aravind S
+title: Aravind Seshadri
 first_name: Aravind
 middle_name:
-last_name: S
+last_name: Seshadri
 contact_note:
 description: > # the ">" symbol means to ignore newlines until "footer_text:"
-  Personal website of Aravind S. Explore projects, experience, writing, and a résumé.
+  Aravind Seshadri is a machine learning engineer at Adobe and an IIT Kanpur electrical engineering graduate. Explore his research, projects, and experience.
 footer_text: >
   Built with Jekyll.
-keywords: Aravind S, portfolio, projects, writing
+keywords: Aravind Seshadri, machine learning, robotics, research, projects
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: ✦ # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
