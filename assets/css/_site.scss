@@ -61,14 +61,20 @@ body.fixed-top-nav {
   letter-spacing: -0.08em;
 }
 
+.navbar .container:has(> .navbar-brand)::before {
+  display: none;
+}
+
 .navbar .navbar-collapse {
   flex-grow: 0;
 }
 
 .navbar .navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 1.05rem;
-  font-weight: 750;
-  letter-spacing: -0.045em;
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: -0.055em;
   color: var(--global-text-color);
 }
 
@@ -647,6 +653,10 @@ body.fixed-top-nav {
   transform: translateY(-2px);
 }
 
+.folio-editorial .folio-editorial-cta span {
+  color: inherit;
+}
+
 .folio-text-link {
   border-bottom: 1px solid currentColor;
   color: var(--folio-ink);
@@ -680,8 +690,16 @@ body.fixed-top-nav {
   letter-spacing: 0.1em;
 }
 
+.folio-editorial .folio-signal-top span {
+  color: #edece4;
+}
+
 .folio-signal-bottom {
   border-top: 1px solid rgba(237, 236, 228, 0.15);
+  color: #b5c9c3;
+}
+
+.folio-editorial .folio-signal-bottom span {
   color: #b5c9c3;
 }
 
@@ -1049,6 +1067,10 @@ body.fixed-top-nav {
   font-style: italic;
   line-height: 0.95;
   text-align: right;
+}
+
+.folio-editorial .folio-journal-mark span {
+  color: #f5f2ea;
 }
 
 .folio-journal-mark span:last-child {
