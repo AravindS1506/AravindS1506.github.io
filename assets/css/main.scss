@@ -32,4 +32,5 @@
 @use "teachings";
 @use "typograms";
 
+// Site-specific editorial layer, included after the theme's shared styles.
 @use "site";
