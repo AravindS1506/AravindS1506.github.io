@@ -7,13 +7,31 @@ nav_order: 5
 description: Resume of Aravind Seshadri, machine learning engineer and IIT Kanpur graduate.
 ---
 
-<div class="folio-page-intro"><p class="folio-eyebrow">05 / Resume</p><h1>The short version<span class="folio-period">.</span></h1><p class="folio-lede">Machine learning engineer at Adobe · B.Tech in Electrical Engineering from IIT Kanpur.</p><div class="folio-actions"><a class="folio-button folio-button--primary" href="https://drive.google.com/file/d/1deZBfhtYXiNd2hw8zdjlO4vfKKAMVy32/view?usp=sharing">View full CV (PDF) <span aria-hidden="true">↗</span></a><a class="folio-button folio-button--secondary" href="mailto:aravi15062003@gmail.com">Get in touch <span aria-hidden="true">→</span></a></div></div>
+<div class="folio-editorial folio-resume">
+  <div class="folio-masthead"><span>05 / Resume</span><span>Selected work &amp; background</span></div>
+  <header class="folio-resume-heading">
+    <div><p class="folio-overline">Aravind Seshadri / Curriculum vitae</p><h1>Experience,<br><em>in context.</em></h1></div>
+    <div class="folio-resume-heading-side"><p>Machine learning engineer at Adobe. Electrical Engineering graduate of IIT Kanpur, working across vision, learning, optimization, and autonomous systems.</p><a class="folio-editorial-cta" href="https://drive.google.com/file/d/1deZBfhtYXiNd2hw8zdjlO4vfKKAMVy32/view?usp=sharing">View full CV <span aria-hidden="true">↗</span></a></div>
+  </header>
 
-<div class="folio-grid folio-grid--two">
-  <section class="folio-card"><span class="folio-card-number">01 / Experience</span><h2>Work</h2><p><strong>Machine Learning Engineer, Adobe</strong> · Jul 2025 – Present, Bengaluru.<br><strong>Media and Data Science Research Intern, Adobe</strong> · May – Aug 2024, Noida. Worked with vision-language models and contrastive learning for image representation.</p></section>
-  <section class="folio-card"><span class="folio-card-number">02 / Education</span><h2>IIT Kanpur</h2><p><strong>B.Tech, Electrical Engineering</strong> · 2021 – 2025 · CGPA 9.8/10.0. Minors in Machine Learning, Computer Networks, Algorithms, and Linguistics.</p></section>
-  <section class="folio-card"><span class="folio-card-number">03 / Skills</span><h2>Tools and methods</h2><p><strong>Languages:</strong> Python, C/C++, MATLAB, LaTeX.<br><strong>ML:</strong> PyTorch, MLX, CoreML, Hugging Face Transformers and Diffusers, TRL.<br><strong>Data:</strong> XGBoost, NetworkX, pandas, NumPy, Matplotlib.<br><strong>Robotics:</strong> ROS, CoppeliaSim, Gazebo.</p></section>
-  <section class="folio-card"><span class="folio-card-number">04 / Recognition</span><h2>Awards and research</h2><p>Prateek Mishra Gold Medal for the top graduating student in Electrical Engineering at IIT Kanpur; four Academic Excellence Awards. Co-authored a 2026 paper in <em>IEEE Wireless Communications Letters</em> and a paper on opinion dynamics under review at <em>IEEE Transactions on Automatic Control</em>.</p></section>
+  <div class="folio-resume-layout">
+    <aside class="folio-resume-sidebar">
+      <span class="folio-overline">On this page</span>
+      <nav aria-label="Resume sections"><a href="#resume-work">01 / Work</a><a href="#resume-education">02 / Education</a><a href="#resume-research">03 / Research</a><a href="#resume-skills">04 / Skills</a><a href="#resume-recognition">05 / Recognition</a></nav>
+      <div class="folio-resume-contact"><span class="folio-overline">Connect</span><a href="mailto:aravi15062003@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/aravind-s-2b4994245/">LinkedIn ↗</a><a href="https://github.com/AravindS1506">GitHub ↗</a></div>
+    </aside>
+
+    <div class="folio-resume-content">
+      <section id="resume-work" class="folio-resume-section"><div class="folio-resume-section-head"><span>01 / Work</span><h2>Where I’ve worked</h2></div><div class="folio-resume-item"><div><h3>Machine Learning Engineer</h3><p>Adobe · Bengaluru</p></div><span>Jul 2025 – Present</span></div><div class="folio-resume-item"><div><h3>Media and Data Science Research Intern</h3><p>Adobe · Noida. Benchmarked vision-language models and fine-tuned a question-aware vision transformer using contrastive learning.</p></div><span>May – Aug 2024</span></div></section>
+
+      <section id="resume-education" class="folio-resume-section"><div class="folio-resume-section-head"><span>02 / Education</span><h2>A foundation in engineering</h2></div><div class="folio-resume-item"><div><h3>Indian Institute of Technology Kanpur</h3><p>B.Tech in Electrical Engineering · CGPA 9.8/10.0. Minors in Machine Learning, Computer Networks, Algorithms, and Linguistics.</p></div><span>2021 – 2025</span></div></section>
+
+      <section id="resume-research" class="folio-resume-section"><div class="folio-resume-section-head"><span>03 / Research</span><h2>Questions in motion</h2></div><div class="folio-resume-item"><div><h3>Low-complexity receivers for AirComp</h3><p>Investigated how to reduce RF chain usage in over-the-air computation. Published with A. K. Chaturvedi in <em>IEEE Wireless Communications Letters</em>.</p></div><span>2024 – 2025</span></div><div class="folio-resume-item"><div><h3>Influence in multi-agent networks</h3><p>Explored edge modification and influence enhancement using signal flow graphs, Kron reduction, and optimization. Related paper under review at <em>IEEE Transactions on Automatic Control</em>.</p></div><span>2024 – 2025</span></div><div class="folio-resume-item"><div><h3>Autonomous UAV landing and tracking</h3><p>Developed an ArUco marker detection pipeline and PID-based controller, with simulation and DJI Tello testing.</p></div><span>2023</span></div></section>
+
+      <section id="resume-skills" class="folio-resume-section"><div class="folio-resume-section-head"><span>04 / Skills</span><h2>Tools of the trade</h2></div><div class="folio-resume-skills"><div><strong>Languages</strong><p>Python · C/C++ · MATLAB · LaTeX</p></div><div><strong>Machine learning</strong><p>PyTorch · MLX · CoreML · Hugging Face · TRL</p></div><div><strong>Data &amp; algorithms</strong><p>XGBoost · NetworkX · pandas · NumPy · Matplotlib</p></div><div><strong>Robotics</strong><p>ROS · CoppeliaSim · Gazebo</p></div></div></section>
+
+      <section id="resume-recognition" class="folio-resume-section"><div class="folio-resume-section-head"><span>05 / Recognition</span><h2>Honors and teaching</h2></div><p class="folio-resume-paragraph">Prateek Mishra Gold Medal for the top graduating student in IIT Kanpur’s Electrical Engineering undergraduate program; four Academic Excellence Awards. Teaching assistant for Control Systems Analysis, technical project mentor, and academic mentor at IIT Kanpur.</p><a class="folio-text-link" href="{{ '/experience/' | relative_url }}">Explore the full experience <span aria-hidden="true">↗</span></a></section>
+    </div>
+
+  </div>
 </div>
-
-<div class="folio-note">I have also worked on AirComp receiver optimization, influence in multi-agent networks, UAV tracking, and teaching and mentoring at IIT Kanpur. See <a href="{{ '/experience/' | relative_url }}">Experience</a> and <a href="{{ '/projects/' | relative_url }}">Projects</a> for details.</div>
