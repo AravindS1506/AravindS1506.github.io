@@ -131,9 +131,7 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
     </section>
 
     <figure class="folio-home-portrait">
-      <!-- Replace this image path and alt text when the portrait is uploaded. -->
-      <img class="folio-home-portrait-image" src="{{ '/assets/img/portrait-placeholder.svg' | relative_url }}" alt="Placeholder for Aravind’s portrait">
-      <figcaption>Portrait coming soon</figcaption>
+      <img class="folio-home-portrait-image" src="{{ '/assets/img/aravind-portrait.jpg' | relative_url }}" alt="Portrait of Aravind Seshadri">
     </figure>
 
     <section id="about" class="folio-home-about" aria-labelledby="about-title">
