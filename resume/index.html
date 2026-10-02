@@ -35,41 +35,33 @@
   .folio-resume-finale {
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content: space-between;
     box-sizing: border-box;
     min-height: calc(100svh - 175px);
     padding: clamp(2.5rem, 6vh, 5rem) 0;
   }
-  .folio-resume-finale .folio-eyebrow {
-    margin-bottom: 1.5rem;
-    color: var(--global-theme-color);
-  }
   .folio-resume-finale h1 {
-    margin: 0;
+    margin: 0 0 2rem;
     color: var(--global-text-color);
     font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
-    font-size: clamp(3.5rem, 8vw, 7.5rem);
+    font-size: clamp(3.2rem, 6.5vw, 6.8rem);
     font-weight: 400;
     letter-spacing: -0.07em;
     line-height: 1.05;
   }
   .folio-resume-finale h1 em { color: var(--global-theme-color); font-weight: 400; }
-  .folio-resume-finale > p:not(.folio-eyebrow) {
-    margin: 1.4rem 0 2.2rem;
-    color: var(--global-text-color-light);
-    font-size: clamp(1.08rem, 1.7vw, 1.3rem);
-  }
-  .folio-resume-finale .folio-editorial-cta { align-self: flex-start; }
-  .folio-resume-connect {
+  .folio-resume-bottom {
     display: flex;
     flex-wrap: wrap;
-    align-items: baseline;
-    gap: 0.8rem 1.7rem;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 2rem;
     margin-top: clamp(3rem, 8vh, 6rem);
-    padding-top: 1.5rem;
+    padding-top: 2rem;
     border-top: 1px solid var(--global-divider-color);
   }
-  .folio-resume-connect p { width: 100%; margin: 0; color: var(--global-text-color-light); }
+  .folio-resume-connect p { margin: 0 0 0.85rem; color: var(--global-text-color-light); }
+  .folio-resume-links { display: flex; flex-wrap: wrap; gap: 0.75rem 1.5rem; }
   .folio-resume-connect a {
     color: var(--global-text-color);
     font-weight: 600;
@@ -77,7 +69,25 @@
   }
   .folio-resume-connect a:hover { color: var(--global-theme-color); text-decoration: underline; }
   .folio-resume-connect a:focus-visible { outline: 3px solid var(--global-theme-color); outline-offset: 4px; }
-</style> <div class="folio-editorial folio-resume-finale"> <p class="folio-eyebrow">05 / Resume</p> <h1>That's all, <em>folks.</em> </h1> <p>You can view my full CV below.</p> <a class="folio-editorial-cta" href="https://drive.google.com/file/d/1deZBfhtYXiNd2hw8zdjlO4vfKKAMVy32/view?usp=sharing" target="_blank" rel="noopener noreferrer">View full CV <span aria-hidden="true">↗</span></a> <div class="folio-resume-connect"> <p>Want to get in touch?</p> <a href="https://www.linkedin.com/in/aravind-s-2b4994245/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> <a href="https://github.com/AravindS1506" target="_blank" rel="noopener noreferrer">GitHub ↗</a> <a href="mailto:aravi15062003@gmail.com">Email ↗</a> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Aravind Seshadri. Built with Jekyll. </div> </footer> <script>
+  .folio-resume-signoff {
+    margin: 0;
+    color: var(--global-text-color);
+    font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+    font-size: clamp(2.3rem, 3.8vw, 4rem);
+    font-weight: 400;
+    letter-spacing: -0.06em;
+    line-height: 1.1;
+  }
+  .folio-resume-signoff em { color: var(--global-theme-color); font-weight: 400; }
+</style> <div class="folio-editorial folio-resume-finale"> <div class="folio-resume-top"> <h1>Click here to view<br><em>my full CV.</em> </h1> <a class="folio-editorial-cta" href="https://drive.google.com/file/d/1deZBfhtYXiNd2hw8zdjlO4vfKKAMVy32/view?usp=sharing" target="_blank" rel="noopener noreferrer">View full CV <span aria-hidden="true">↗</span></a> </div> <div class="folio-resume-bottom"> <div class="folio-resume-connect"> <p>Want to get in touch?</p> <div class="folio-resume-links"> <a href="https://www.linkedin.com/in/aravind-s-2b4994245/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a> <a href="https://github.com/AravindS1506" target="_blank" rel="noopener noreferrer">GitHub ↗</a> <a href="mailto:aravi15062003@gmail.com">Email ↗</a> </div> </div> <h2 class="folio-resume-signoff">That's all, <em>folks.</em> </h2> </div> </div> <script>
+  // Keep the site's theme switch to one click in either direction.
+  if (typeof toggleThemeSetting === "function" && typeof setThemeSetting === "function") {
+    toggleThemeSetting = function () {
+      const activeTheme = document.documentElement.getAttribute("data-theme");
+      setThemeSetting(activeTheme === "dark" ? "light" : "dark");
+    };
+  }
+</script> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Aravind Seshadri. Built with Jekyll. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
