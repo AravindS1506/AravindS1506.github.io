@@ -58,7 +58,6 @@ description: Writing and notes from Aravind Seshadri.
 </style>
 
 <div class="folio-editorial folio-journal">
-  <div class="folio-masthead"><span>04 / Blog</span></div>
   <header class="folio-journal-cover">
     <div class="folio-journal-cover-copy"><h1 id="blog-title">Ideas worth sharing.</h1><p>A few pieces I’ve worked on with others.</p></div>
   </header>
@@ -79,3 +78,12 @@ description: Writing and notes from Aravind Seshadri.
   </section>
   {% endif %}
 </div>
+<script>
+  // Keep the site's theme switch to one click in either direction.
+  if (typeof toggleThemeSetting === "function" && typeof setThemeSetting === "function") {
+    toggleThemeSetting = function () {
+      const activeTheme = document.documentElement.getAttribute("data-theme");
+      setThemeSetting(activeTheme === "dark" ? "light" : "dark");
+    };
+  }
+</script>
