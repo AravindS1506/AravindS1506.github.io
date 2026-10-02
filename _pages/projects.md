@@ -84,7 +84,7 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
 </style>
 
 <div class="folio-projects">
-<div class="folio-page-intro"><p class="folio-eyebrow">03 / Projects</p><h1 id="publications-title">Publications<span class="folio-period">.</span></h1></div>
+<div class="folio-page-intro"><h1 id="publications-title">Publications<span class="folio-period">.</span></h1></div>
 
 <section aria-labelledby="publications-title">
   <ol class="folio-paper-list">
@@ -94,7 +94,7 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
 </section>
 
 <section aria-labelledby="more-title">
-<h2 id="more-title" class="folio-more-title">Some more<span class="folio-period">...</span></h2>
+<h2 id="more-title" class="folio-more-title">From the workbench<span class="folio-period">.</span></h2>
 
 <div class="folio-grid folio-grid--two">
   <article class="folio-card folio-project"><div class="folio-project-visual folio-project-visual--a" aria-hidden="true"><span>01</span></div><span class="folio-card-number">Oct – Nov 2024 / Computer vision</span><h2>CrowdDiffKDE</h2><p>Enhanced diffusion-based crowd density estimation with KDE to reduce latency.</p><span class="folio-tag">Diffusion · KDE</span><p class="folio-project-link"><a href="https://github.com/AravindS1506/crowddiff">View code ↗</a></p></article>
@@ -105,3 +105,12 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
 </div>
 </section>
 </div>
+<script>
+  // Keep the site's theme switch to one click in either direction.
+  if (typeof toggleThemeSetting === "function" && typeof setThemeSetting === "function") {
+    toggleThemeSetting = function () {
+      const activeTheme = document.documentElement.getAttribute("data-theme");
+      setThemeSetting(activeTheme === "dark" ? "light" : "dark");
+    };
+  }
+</script>

@@ -47,7 +47,7 @@ description: Aravind Seshadri's engineering, research, and teaching experience.
 </style>
 
 <div class="folio-experience">
-<div class="folio-page-intro"><p class="folio-eyebrow">02 / Experience</p><h1>The journey so far<span class="folio-period">.</span></h1><p class="folio-lede">Engineering, research, and mentoring across machine learning and autonomous systems.</p></div>
+<div class="folio-page-intro"><h1>The journey so far<span class="folio-period">.</span></h1></div>
 
 <div class="folio-timeline">
   <article class="folio-timeline-item"><div class="folio-timeline-date">Jul 2025 – Present</div><div><span class="folio-tag">Professional · Bengaluru</span><h2>Machine Learning Engineer · Adobe</h2><p>As a machine learning engineer, I work on AI safety guardrails and on-device inference of diffusion models.</p></div></article>
@@ -58,3 +58,12 @@ description: Aravind Seshadri's engineering, research, and teaching experience.
   <article class="folio-timeline-item"><div class="folio-timeline-date">May – Jul 2023</div><div><span class="folio-tag">Research · SURGE</span><h2>Vision-Based Autonomous UAV Landing and Tracking</h2><p>Built an automated ArUco marker detection system using DJI Tello drones for drone landing and leader-follower tracking scenarios.</p></div></article>
 </div>
 </div>
+<script>
+  // Keep the site's theme switch to one click in either direction.
+  if (typeof toggleThemeSetting === "function" && typeof setThemeSetting === "function") {
+    toggleThemeSetting = function () {
+      const activeTheme = document.documentElement.getAttribute("data-theme");
+      setThemeSetting(activeTheme === "dark" ? "light" : "dark");
+    };
+  }
+</script>

@@ -51,14 +51,14 @@ body.fixed-top-nav {
 }
 
 .navbar .container::before {
-  content: "A / S";
+  content: "Aravind Seshadri";
   margin-right: auto;
   color: var(--global-text-color);
   font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.45rem;
+  font-size: 1.05rem;
   font-style: italic;
-  font-weight: 700;
-  letter-spacing: -0.08em;
+  font-weight: 600;
+  letter-spacing: -0.055em;
 }
 
 .navbar .container:has(> .navbar-brand)::before {
