@@ -8,9 +8,8 @@ description: A little introduction to Aravind Seshadri.
 <style>
   /* Home needs this spacing even when a previous main.css is cached. */
   body:has(.folio-home) { padding-bottom: 35px; }
-  body:has(.folio-home) > .container.mt-5 { margin-top: 0 !important; }
   .folio-home { padding-bottom: 0; }
-  .folio-home-welcome { min-height: calc(100svh - 103px); padding: clamp(1.5rem, 3vh, 3rem) 0; }
+  .folio-home-welcome { min-height: calc(100svh - 151px); padding: clamp(1.5rem, 3vh, 3rem) 0; }
 </style>
 
 <div class="folio-editorial folio-home">
