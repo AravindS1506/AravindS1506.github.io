@@ -120,7 +120,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # -----------------------------------------------------------------------------
 
 blog_name: Writing
-blog_description: Notes and ideas, coming soon.
+blog_description: Writing and collaborations on machine learning, perception, and robotics.
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 

@@ -1134,6 +1134,15 @@ body.fixed-top-nav {
   color: var(--global-theme-color);
 }
 
+.folio-journal-source {
+  display: block;
+  margin-top: 0.65rem;
+  color: var(--folio-muted);
+  font-family: "SFMono-Regular", Consolas, monospace;
+  font-size: 0.67rem;
+  line-height: 1.6;
+}
+
 .folio-journal-entry h3 {
   font-size: 2rem;
 }
@@ -1399,6 +1408,11 @@ body.fixed-top-nav {
 
   .folio-journal-waiting {
     padding: 2.5rem 0;
+  }
+
+  .folio-journal-entry {
+    grid-template-columns: 1fr;
+    gap: 0.9rem;
   }
 
   .folio-chapter,
