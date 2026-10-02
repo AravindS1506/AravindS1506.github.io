@@ -68,7 +68,8 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
     font-weight: 700;
     line-height: 1.45;
   }
-  .folio-paper-list a {
+  .folio-paper-list a,
+  .folio-paper-title {
     color: var(--global-text-color);
     font-size: 1.08rem;
     line-height: 1.5;
@@ -88,7 +89,7 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
 <section aria-labelledby="publications-title">
   <ol class="folio-paper-list">
     <li><span class="folio-paper-meta">2026 · IEEE Wireless Communications Letters</span><a href="https://doi.org/10.1109/LWC.2026.3677126" target="_blank" rel="noopener noreferrer">Reduced RF Chains Using Fixed Phase Shifters for Over-the-Air Computation <span aria-hidden="true">↗</span></a></li>
-    <li><span class="folio-paper-meta">2026 · arXiv preprint</span><a href="https://arxiv.org/abs/2609.13895" target="_blank" rel="noopener noreferrer">Influence Enhancement in Opinion Dynamics Using Edge Modification: A Kron Reduction-Based Approach <span aria-hidden="true">↗</span></a></li>
+    <li><span class="folio-paper-meta">2026 · Research paper</span><span class="folio-paper-title">Influence Enhancement in Opinion Dynamics Using Edge Modification: A Kron Reduction-Based Approach</span></li>
   </ol>
 </section>
 
