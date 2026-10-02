@@ -121,11 +121,6 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
         <h1 id="home-title">Hi, I’m<br><em>Aravind.</em></h1>
         <p class="folio-home-intro">Looks like you’ve stumbled onto my page.<br>Curious about my existence?</p>
 
-        <nav class="folio-home-socials" aria-label="Find me online">
-          <a href="https://github.com/{{ site.data.socials.github_username }}" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a>
-          <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
-        </nav>
-
         <button class="folio-home-scroll" type="button" aria-controls="about"><span>Scroll down</span><span class="folio-home-scroll-arrow" aria-hidden="true">↓</span></button>
       </div>
     </section>
@@ -153,4 +148,13 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
       block: "start"
     });
   });
+</script>
+<script>
+  // Keep the site's theme switch to one click in either direction.
+  if (typeof toggleThemeSetting === "function" && typeof setThemeSetting === "function") {
+    toggleThemeSetting = function () {
+      const activeTheme = document.documentElement.getAttribute("data-theme");
+      setThemeSetting(activeTheme === "dark" ? "light" : "dark");
+    };
+  }
 </script>
