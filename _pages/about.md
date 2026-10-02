@@ -8,3 +8,4 @@ description: About Aravind Seshadri has moved to the Home page.
 ---
 
 <p>About is now part of <a href="{{ '/' | relative_url }}#about">the Home page</a>.</p>
+<script>window.location.replace("{{ '/' | relative_url }}#about");</script>
