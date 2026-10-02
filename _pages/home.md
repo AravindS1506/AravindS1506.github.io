@@ -89,7 +89,6 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
     transform: translateY(3px);
   }
   .folio-home-scroll:focus-visible { outline: 3px solid var(--global-theme-color); outline-offset: 5px; }
-  .folio-home-about .folio-home-invite { margin-top: 2.5rem; }
   @media (max-width: 900px) {
     .folio-home-layout {
       grid-template-columns: 1fr;
@@ -135,7 +134,6 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
 
       <p>Outside work, I love swimming, reading fiction (especially thrillers, mysteries, and sci-fi), and watching movies. I recently started playing the guitar, and most of all, I enjoy exploring new places on my bike.</p>
 
-      <a class="folio-home-invite" href="{{ '/experience/' | relative_url }}"><span>The journey so far</span><span class="folio-home-invite-arrow" aria-hidden="true">→</span></a>
     </section>
 
   </div>
