@@ -652,6 +652,11 @@ body:has(.folio-home) {
   --global-footer-link-color: #fffaf5;
   --folio-soft: #efdcd8;
   font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  padding-bottom: 35px;
+}
+
+body:has(.folio-home) > .container.mt-5 {
+  margin-top: 0 !important;
 }
 
 html[data-theme="dark"] body:has(.folio-home) {
@@ -673,6 +678,7 @@ html[data-theme="dark"] body:has(.folio-home) {
   --folio-ink: var(--global-text-color);
   --folio-muted: var(--global-text-color-light);
   --folio-line: var(--global-divider-color);
+  padding-bottom: 0;
 }
 
 .folio-home-welcome {
@@ -680,8 +686,8 @@ html[data-theme="dark"] body:has(.folio-home) {
   grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
   align-items: center;
   gap: clamp(2rem, 5vw, 6rem);
-  min-height: min(760px, calc(100svh - 150px));
-  padding: clamp(3rem, 6vw, 6rem) 0;
+  min-height: calc(100svh - 103px);
+  padding: clamp(1.5rem, 3vh, 3rem) 0;
 }
 
 .folio-home h1 {
