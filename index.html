@@ -19,6 +19,7 @@
     grid-area: welcome;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     justify-content: center;
     min-height: calc(100svh - 151px);
     padding: clamp(1.5rem, 3vh, 3rem) 0;
@@ -56,6 +57,37 @@
     padding-top: 1.5rem;
     border-top: 1px solid var(--global-divider-color);
   }
+  .folio-home-scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: clamp(2.4rem, 5vw, 4rem);
+    padding: 0.3rem 0;
+    border: 0;
+    background: transparent;
+    color: var(--global-text-color-light);
+    cursor: pointer;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .folio-home-scroll-arrow {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 50%;
+    color: var(--global-theme-color);
+    font-size: 1.25rem;
+    transition: transform 180ms ease, background-color 180ms ease;
+  }
+  .folio-home-scroll:hover { color: var(--global-text-color); }
+  .folio-home-scroll:hover .folio-home-scroll-arrow {
+    background: var(--folio-soft);
+    transform: translateY(3px);
+  }
+  .folio-home-scroll:focus-visible { outline: 3px solid var(--global-theme-color); outline-offset: 5px; }
   .folio-home-about .folio-home-invite { margin-top: 2.5rem; }
   @media (max-width: 900px) {
     .folio-home-layout {
@@ -76,7 +108,18 @@
     .folio-home-portrait { width: min(74vw, 310px); }
     .folio-home-about { padding-top: 2.5rem; }
   }
-</style> <div class="folio-editorial folio-home"> <div class="folio-home-layout"> <section class="folio-home-welcome" aria-labelledby="home-title"> <div class="folio-home-copy"> <h1 id="home-title">Hi, I’m<br><em>Aravind.</em> </h1> <p class="folio-home-intro">Looks like you’ve stumbled onto my page.<br>Curious about my existence?</p> <nav class="folio-home-socials" aria-label="Find me online"> <a href="https://github.com/AravindS1506" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a> <a href="https://www.linkedin.com/in/aravind-s-2b4994245/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a> </nav> <a class="folio-home-invite" href="#about"><span>Let’s dig around</span><span class="folio-home-invite-arrow" aria-hidden="true">↓</span></a> </div> </section> <figure class="folio-home-portrait"> <img class="folio-home-portrait-image" src="/assets/img/portrait-placeholder.svg" alt="Placeholder for Aravind’s portrait"> <figcaption>Portrait coming soon</figcaption> </figure> <section id="about" class="folio-home-about" aria-labelledby="about-title"> <h2 id="about-title">A little <em>about me.</em> </h2> <p>I’m a machine learning engineer at Adobe, working on AI safety guardrails and on-device computation. I completed my B.Tech. in Electrical Engineering at the Indian Institute of Technology Kanpur in 2025. I enjoy problems that bring mathematical reasoning into the real world, especially where machine learning meets vision, robotics, and communication.</p> <p>Outside work, I love swimming, reading fiction (especially thrillers, mysteries, and sci-fi), and watching movies. I recently started playing the guitar, and most of all, I enjoy exploring new places on my bike.</p> <a class="folio-home-invite" href="/experience/"><span>The journey so far</span><span class="folio-home-invite-arrow" aria-hidden="true">→</span></a> </section> </div> </div> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Aravind Seshadri. Built with Jekyll. </div> </footer> <script>
+  @media (prefers-reduced-motion: reduce) {
+    .folio-home-scroll-arrow { transition: none; }
+  }
+</style> <div class="folio-editorial folio-home"> <div class="folio-home-layout"> <section class="folio-home-welcome" aria-labelledby="home-title"> <div class="folio-home-copy"> <h1 id="home-title">Hi, I’m<br><em>Aravind.</em> </h1> <p class="folio-home-intro">Looks like you’ve stumbled onto my page.<br>Curious about my existence?</p> <nav class="folio-home-socials" aria-label="Find me online"> <a href="https://github.com/AravindS1506" target="_blank" rel="noopener noreferrer">GitHub <span aria-hidden="true">↗</span></a> <a href="https://www.linkedin.com/in/aravind-s-2b4994245/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a> </nav> <button class="folio-home-scroll" type="button" aria-controls="about"><span>Scroll down</span><span class="folio-home-scroll-arrow" aria-hidden="true">↓</span></button> </div> </section> <figure class="folio-home-portrait"> <img class="folio-home-portrait-image" src="/assets/img/portrait-placeholder.svg" alt="Placeholder for Aravind’s portrait"> <figcaption>Portrait coming soon</figcaption> </figure> <section id="about" class="folio-home-about" aria-labelledby="about-title"> <h2 id="about-title">A little <em>about me.</em> </h2> <p>I’m a machine learning engineer at Adobe, working on AI safety guardrails and on-device computation. I completed my B.Tech. in Electrical Engineering at the Indian Institute of Technology Kanpur in 2025. I enjoy problems that bring mathematical reasoning into the real world, especially where machine learning meets vision, robotics, and communication.</p> <p>Outside work, I love swimming, reading fiction (especially thrillers, mysteries, and sci-fi), and watching movies. I recently started playing the guitar, and most of all, I enjoy exploring new places on my bike.</p> <a class="folio-home-invite" href="/experience/"><span>The journey so far</span><span class="folio-home-invite-arrow" aria-hidden="true">→</span></a> </section> </div> </div> <script>
+  document.querySelector(".folio-home-scroll").addEventListener("click", function () {
+    const about = document.getElementById("about");
+    about.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      block: "start"
+    });
+  });
+</script> </div> <footer class="fixed-bottom" role="contentinfo"> <div class="container mt-0"> © Copyright 2026 Aravind Seshadri. Built with Jekyll. </div> </footer> <script>
   window.alFolio = {
     compatBootstrap: false
   };
