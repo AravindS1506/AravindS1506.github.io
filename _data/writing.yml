@@ -1,0 +1,10 @@
+- title: "On-Device Image Generation: Running a 12B-Parameter Diffusion Model on a MacBook"
+  date: 2026-04-28
+  authors: "Osheen Nayak · Aravind Seshadri"
+  description: "A technical walkthrough of making a 12B-parameter image model run locally on Apple Silicon, from quantization and memory management to inference speed."
+  url: "https://medium.com/@nayakosheen/on-device-image-generation-running-a-12b-parameter-diffusion-model-on-a-macbook-db75635b3b43"
+- title: "A Complete Guide to Distillation for Diffusion Models: Part 1"
+  date: 2026-01-08
+  authors: "Osheen Nayak · Aravind Seshadri"
+  description: "An introduction to diffusion model distillation, including teacher and student models, distribution matching, and the ingredients of a faster sampling pipeline."
+  url: "https://medium.com/@nayakosheen/a-complete-guide-to-distillation-for-diffusion-models-part-1-fbe5a4027478"
