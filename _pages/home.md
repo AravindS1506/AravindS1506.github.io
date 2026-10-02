@@ -58,6 +58,37 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
     padding-top: 1.5rem;
     border-top: 1px solid var(--global-divider-color);
   }
+  .folio-home-scroll {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.85rem;
+    margin-top: clamp(2.4rem, 5vw, 4rem);
+    padding: 0.3rem 0;
+    border: 0;
+    background: transparent;
+    color: var(--global-text-color-light);
+    cursor: pointer;
+    font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+    font-size: 0.95rem;
+    font-weight: 600;
+  }
+  .folio-home-scroll-arrow {
+    display: grid;
+    place-items: center;
+    width: 2.5rem;
+    height: 2.5rem;
+    border: 1px solid var(--global-theme-color);
+    border-radius: 50%;
+    color: var(--global-theme-color);
+    font-size: 1.25rem;
+    transition: transform 180ms ease, background-color 180ms ease;
+  }
+  .folio-home-scroll:hover { color: var(--global-text-color); }
+  .folio-home-scroll:hover .folio-home-scroll-arrow {
+    background: var(--folio-soft);
+    transform: translateY(3px);
+  }
+  .folio-home-scroll:focus-visible { outline: 3px solid var(--global-theme-color); outline-offset: 5px; }
   .folio-home-about .folio-home-invite { margin-top: 2.5rem; }
   @media (max-width: 900px) {
     .folio-home-layout {
@@ -78,6 +109,9 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
     .folio-home-portrait { width: min(74vw, 310px); }
     .folio-home-about { padding-top: 2.5rem; }
   }
+  @media (prefers-reduced-motion: reduce) {
+    .folio-home-scroll-arrow { transition: none; }
+  }
 </style>
 
 <div class="folio-editorial folio-home">
@@ -92,7 +126,7 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
           <a href="https://www.linkedin.com/in/{{ site.data.socials.linkedin_username }}/" target="_blank" rel="noopener noreferrer">LinkedIn <span aria-hidden="true">↗</span></a>
         </nav>
 
-        <a class="folio-home-invite" href="#about"><span>Let’s dig around</span><span class="folio-home-invite-arrow" aria-hidden="true">↓</span></a>
+        <button class="folio-home-scroll" type="button" aria-controls="about"><span>Scroll down</span><span class="folio-home-scroll-arrow" aria-hidden="true">↓</span></button>
       </div>
     </section>
 
@@ -113,3 +147,12 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
 
   </div>
 </div>
+<script>
+  document.querySelector(".folio-home-scroll").addEventListener("click", function () {
+    const about = document.getElementById("about");
+    about.scrollIntoView({
+      behavior: window.matchMedia("(prefers-reduced-motion: reduce)").matches ? "auto" : "smooth",
+      block: "start"
+    });
+  });
+</script>
