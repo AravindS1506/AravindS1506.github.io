@@ -586,49 +586,11 @@ body.fixed-top-nav {
   color: var(--global-theme-color);
 }
 
-.folio-home-lead {
-  display: grid;
-  grid-template-columns: minmax(0, 1.16fr) minmax(330px, 0.84fr);
-  align-items: center;
-  gap: clamp(2rem, 5vw, 5.5rem);
-  padding: 3.3rem 0 2.4rem;
-}
-
-.folio-home-copy .folio-overline {
-  display: flex;
-  align-items: center;
-  gap: 0.75rem;
-}
-
-.folio-overline-mark,
-.folio-status-dot {
-  display: inline-block;
-  flex: none;
-  width: 8px;
-  height: 8px;
-  border-radius: 50%;
-  background: var(--global-theme-color);
-}
-
-.folio-home h1 {
-  margin: 1.7rem 0 1.5rem;
-  font-size: clamp(3.35rem, 5.8vw, 5.85rem);
-  line-height: 1.04;
-}
-
-.folio-home-summary {
-  max-width: 560px;
-  color: var(--folio-muted);
-  font-size: clamp(1.06rem, 1.7vw, 1.23rem);
-}
-
-.folio-home-links,
 .folio-journal-links {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   gap: 1.6rem;
-  margin-top: 2rem;
 }
 
 .folio-editorial-cta {
@@ -669,171 +631,207 @@ body.fixed-top-nav {
   color: var(--global-theme-color);
 }
 
-.folio-signal {
-  display: flex;
-  flex-direction: column;
-  min-height: 470px;
-  overflow: hidden;
-  background: #1a343c;
-  color: #edece4;
-}
-
-.folio-signal-top,
-.folio-signal-bottom {
-  display: flex;
-  justify-content: space-between;
-  gap: 0.5rem;
-  padding: 1.2rem 1.35rem;
-  font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 0.58rem;
-  font-weight: 600;
-  letter-spacing: 0.1em;
-}
-
-.folio-editorial .folio-signal-top span {
-  color: #edece4;
-}
-
-.folio-signal-bottom {
-  border-top: 1px solid rgba(237, 236, 228, 0.15);
-  color: #b5c9c3;
-}
-
-.folio-editorial .folio-signal-bottom span {
-  color: #b5c9c3;
-}
-
-.folio-signal-drawing {
-  width: 100%;
-  min-height: 330px;
-  flex: 1;
-}
-
-.folio-signal-grid {
-  stroke: rgba(237, 236, 228, 0.075);
-  stroke-width: 1;
-}
-
-.folio-signal-orbit {
-  stroke: rgba(176, 221, 205, 0.22);
-  stroke-width: 1;
-}
-
-.folio-signal-path {
-  stroke: #e99c82;
-  stroke-width: 3;
-}
-
-.folio-signal-path--fine {
-  stroke: rgba(176, 221, 205, 0.55);
-  stroke-width: 1.5;
-}
-
-.folio-signal-node {
-  fill: #e99c82;
-  stroke: #1a343c;
-  stroke-width: 3;
-}
-
-.folio-signal-core {
-  fill: #1a343c;
-  stroke: #b0ddcd;
-  stroke-width: 1.5;
-}
-
-.folio-signal-core-lines {
-  stroke: #e99c82;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-  stroke-width: 3;
-}
-
-.folio-signal-dot {
-  fill: #b0ddcd;
-}
-
-.folio-home-status {
-  display: flex;
-  align-items: center;
-  gap: 0.8rem;
-  padding: 1.15rem 0;
-  border-top: 1px solid var(--folio-line);
-  border-bottom: 1px solid var(--folio-line);
-  color: var(--folio-muted);
-  font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 0.67rem;
-  letter-spacing: 0.035em;
-}
-
-.folio-home-status > span:last-child {
-  margin-left: auto;
-}
-
-.folio-status-dot {
-  width: 6px;
-  height: 6px;
-}
-
-.folio-home-directory {
-  display: grid;
-  grid-template-columns: minmax(190px, 0.38fr) minmax(0, 0.62fr);
-  gap: clamp(2rem, 6vw, 6rem);
-  padding-top: 5rem;
-}
-
-.folio-directory-intro h2,
 .folio-section-title h2 {
   margin: 0.8rem 0;
   font-size: clamp(2.4rem, 4vw, 3.6rem);
   line-height: 1.1;
 }
 
-.folio-directory-intro > p:last-child {
-  max-width: 240px;
-  color: var(--folio-muted);
-  font-size: 0.9rem;
+/* The Home page uses a softer palette and a more personal visual language. */
+body:has(.folio-home) {
+  --global-bg-color: #fbf7f0;
+  --global-text-color: #322b2b;
+  --global-text-color-light: #685c5a;
+  --global-theme-color: #a34d5a;
+  --global-hover-color: #803c48;
+  --global-hover-text-color: #fffaf5;
+  --global-card-bg-color: #fffaf5;
+  --global-divider-color: #dcccc7;
+  --global-footer-bg-color: #30262a;
+  --global-footer-text-color: #f6eee9;
+  --global-footer-link-color: #fffaf5;
+  --folio-soft: #efdcd8;
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
 }
 
-.folio-directory-row {
+html[data-theme="dark"] body:has(.folio-home) {
+  --global-bg-color: #211d20;
+  --global-text-color: #f7ede7;
+  --global-text-color-light: #cebdb8;
+  --global-theme-color: #f2ab9c;
+  --global-hover-color: #ffd0be;
+  --global-hover-text-color: #211d20;
+  --global-card-bg-color: #30282d;
+  --global-divider-color: #58474b;
+  --global-footer-bg-color: #191518;
+  --global-footer-text-color: #f7ede7;
+  --global-footer-link-color: #fffaf5;
+  --folio-soft: #49343c;
+}
+
+.folio-home {
+  --folio-ink: var(--global-text-color);
+  --folio-muted: var(--global-text-color-light);
+  --folio-line: var(--global-divider-color);
+}
+
+.folio-home-welcome {
   display: grid;
-  grid-template-columns: 38px minmax(110px, 0.65fr) minmax(0, 1fr) 20px;
+  grid-template-columns: minmax(0, 1.15fr) minmax(300px, 0.85fr);
   align-items: center;
-  gap: 1rem;
-  min-height: 74px;
-  padding: 0.7rem 0.4rem;
-  border-top: 1px solid var(--folio-line);
-  color: var(--folio-ink) !important;
-  text-decoration: none !important;
-  transition:
-    padding-left 150ms ease,
-    background-color 150ms ease;
+  gap: clamp(2rem, 5vw, 6rem);
+  min-height: min(760px, calc(100svh - 150px));
+  padding: clamp(3rem, 6vw, 6rem) 0;
 }
 
-.folio-directory-row:last-child {
-  border-bottom: 1px solid var(--folio-line);
+.folio-home h1 {
+  margin: 0 0 2rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", "Book Antiqua", Georgia, serif;
+  font-size: clamp(4rem, 7vw, 7.2rem);
+  font-weight: 400;
+  letter-spacing: -0.075em;
+  line-height: 0.98;
 }
 
-.folio-directory-row:hover {
-  padding-left: 0.8rem;
-  background: var(--folio-soft);
-}
-
-.folio-directory-row > span:first-child,
-.folio-directory-row > span:last-child {
+.folio-home h1 em {
   color: var(--global-theme-color);
-  font-family: "SFMono-Regular", Consolas, monospace;
-  font-size: 0.75rem;
-}
-
-.folio-directory-row strong {
-  font-family: Georgia, "Times New Roman", serif;
-  font-size: 1.4rem;
   font-weight: 400;
 }
 
-.folio-directory-row > span:nth-child(3) {
+.folio-home-intro {
+  max-width: 33ch;
+  margin: 0;
+  color: var(--folio-ink);
+  font-size: clamp(1.12rem, 1.65vw, 1.42rem);
+  line-height: 1.6 !important;
+}
+
+.folio-home-socials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.9rem 1.8rem;
+  margin-top: 2rem;
+}
+
+.folio-home-socials a {
+  border-bottom: 1px solid var(--global-theme-color);
+  color: var(--folio-ink);
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: color 160ms ease;
+}
+
+.folio-home-socials a:hover {
+  color: var(--global-theme-color);
+}
+
+.folio-home-invite {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  max-width: 390px;
+  margin-top: clamp(3rem, 6vw, 5rem);
+  padding: 1.15rem 1.3rem 1.15rem 1.5rem;
+  border: 1px solid var(--global-theme-color);
+  border-radius: 4px 26px 4px 26px;
+  background: var(--global-card-bg-color);
+  box-shadow: 7px 7px 0 var(--folio-soft);
+  color: var(--folio-ink);
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: clamp(1.35rem, 2vw, 1.7rem);
+  text-decoration: none !important;
+  transition:
+    box-shadow 180ms ease,
+    transform 180ms ease;
+}
+
+.folio-home-invite:hover {
+  box-shadow: 10px 10px 0 var(--folio-soft);
+  color: var(--folio-ink);
+  transform: translate(-3px, -3px);
+}
+
+.folio-home-invite-arrow {
+  display: grid;
+  flex: none;
+  place-items: center;
+  width: 2.1rem;
+  height: 2.1rem;
+  border-radius: 50%;
+  background: var(--global-theme-color);
+  color: var(--global-hover-text-color);
+  font-family: "Trebuchet MS", "Segoe UI", sans-serif;
+  font-size: 1.2rem;
+}
+
+.folio-home-portrait {
+  position: relative;
+  width: min(100%, 455px);
+  margin: 0;
+  padding: 1.1rem 1.1rem 0 0;
+  justify-self: end;
+}
+
+.folio-home-portrait::before {
+  content: "";
+  position: absolute;
+  inset: 0 0 2.1rem 1.25rem;
+  border-radius: 49% 49% 11% 11%;
+  background: var(--folio-soft);
+  transform: rotate(4deg);
+}
+
+.folio-home-portrait-image {
+  position: relative;
+  display: block;
+  width: 100%;
+  aspect-ratio: 4 / 4.8;
+  border: 1px dashed var(--global-theme-color);
+  border-radius: 49% 49% 11% 11%;
+  background: linear-gradient(145deg, var(--global-card-bg-color), var(--folio-soft));
+  object-fit: cover;
+}
+
+.folio-home-portrait figcaption {
+  position: relative;
+  padding-top: 1.1rem;
   color: var(--folio-muted);
-  font-size: 0.78rem;
+  font-family: "Iowan Old Style", "Palatino Linotype", Georgia, serif;
+  font-size: 0.95rem;
+  font-style: italic;
+  text-align: right;
+}
+
+@media (max-width: 900px) {
+  .folio-home-welcome {
+    grid-template-columns: 1fr;
+    min-height: 0;
+  }
+
+  .folio-home-portrait {
+    width: min(78vw, 370px);
+    justify-self: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .folio-home-welcome {
+    gap: 3.5rem;
+    padding: 3.5rem 0;
+  }
+
+  .folio-home h1 {
+    font-size: clamp(3.9rem, 14vw, 5.7rem);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .folio-home-socials a,
+  .folio-home-invite {
+    transition: none;
+  }
 }
 
 .folio-about-opening {
@@ -1303,22 +1301,9 @@ body.fixed-top-nav {
 }
 
 @media (max-width: 900px) {
-  .folio-home-lead,
   .folio-about-opening,
   .folio-resume-heading {
     grid-template-columns: 1fr;
-  }
-
-  .folio-home-lead {
-    gap: 2rem;
-  }
-
-  .folio-signal {
-    min-height: 330px;
-  }
-
-  .folio-signal-drawing {
-    max-height: 320px;
   }
 
   .folio-about-opening,
@@ -1329,40 +1314,21 @@ body.fixed-top-nav {
 }
 
 @media (max-width: 680px) {
-  .folio-masthead span:last-child,
-  .folio-home-status > span:last-child {
+  .folio-masthead span:last-child {
     display: none;
   }
 
-  .folio-home h1,
   .folio-about-opening h1,
   .folio-journal-cover h1,
   .folio-resume-heading h1 {
     font-size: clamp(3rem, 11vw, 4.5rem);
   }
 
-  .folio-home-lead {
-    padding-top: 2.5rem;
-  }
-
-  .folio-home-directory,
   .folio-about-body,
   .folio-resume-layout,
   .folio-journal-waiting {
     grid-template-columns: 1fr;
     gap: 1.5rem;
-  }
-
-  .folio-home-directory {
-    padding-top: 3rem;
-  }
-
-  .folio-directory-row {
-    grid-template-columns: 25px minmax(0, 1fr) 20px;
-  }
-
-  .folio-directory-row > span:nth-child(3) {
-    display: none;
   }
 
   .folio-about-aside,
@@ -1443,8 +1409,7 @@ body.fixed-top-nav {
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .folio-editorial-cta,
-  .folio-directory-row {
+  .folio-editorial-cta {
     transition: none;
   }
 }
