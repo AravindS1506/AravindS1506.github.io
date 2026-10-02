@@ -20,6 +20,7 @@ description: Meet Aravind Seshadri and learn a little about his work and interes
     grid-area: welcome;
     display: flex;
     flex-direction: column;
+    align-items: stretch;
     justify-content: center;
     min-height: calc(100svh - 151px);
     padding: clamp(1.5rem, 3vh, 3rem) 0;
