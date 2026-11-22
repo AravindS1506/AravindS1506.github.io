@@ -90,6 +90,7 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
   <ol class="folio-paper-list">
     <li><span class="folio-paper-meta">2026 · IEEE Wireless Communications Letters</span><a href="https://doi.org/10.1109/LWC.2026.3677126" target="_blank" rel="noopener noreferrer">Reduced RF Chains Using Fixed Phase Shifters for Over-the-Air Computation <span aria-hidden="true">↗</span></a></li>
     <li><span class="folio-paper-meta">2026 · Research paper</span><span class="folio-paper-title">Influence Enhancement in Opinion Dynamics Using Edge Modification: A Kron Reduction-Based Approach</span></li>
+    <li><span class="folio-paper-meta">IEEE Control Systems Letters · Under review</span><span class="folio-paper-title">Topological Insights for Edge modifications to Enhance Influence in Friedkin-Johnsen Model</span></li>
   </ol>
 </section>
 
