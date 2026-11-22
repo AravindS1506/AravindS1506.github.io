@@ -4,7 +4,7 @@ title: Experience
 permalink: /experience/
 nav: true
 nav_order: 2
-description: Aravind Seshadri's engineering, research, and teaching experience.
+description: Aravind Seshadri's education and engineering, research, and teaching experience.
 ---
 
 <style>
@@ -49,7 +49,14 @@ description: Aravind Seshadri's engineering, research, and teaching experience.
 <div class="folio-experience">
 <div class="folio-page-intro"><h1>The journey so far<span class="folio-period">.</span></h1></div>
 
-<div class="folio-timeline">
+<h2 id="education-title">Education</h2>
+<div class="folio-timeline" aria-labelledby="education-title">
+  <article class="folio-timeline-item"><div class="folio-timeline-date">2021 – 2025</div><div><span class="folio-tag">Education · IIT Kanpur</span><h2>B.Tech. in Electrical Engineering · Indian Institute of Technology Kanpur</h2><p>CGPA: 9.8/10.0. Minors in Machine Learning, Computer Systems, Algorithms, and Linguistics.</p><p>Recipient of the Prateek Mishra Gold Medal for the top graduating student in Electrical Engineering and four Academic Excellence Awards.</p></div></article>
+  <article class="folio-timeline-item"><div class="folio-timeline-date">2021</div><div><span class="folio-tag">Education · Bengaluru</span><h2>CBSE Class XII · Delhi Public School Bangalore East</h2><p>All India Senior School Certificate Examination (AISSCE): 97.4%.</p></div></article>
+</div>
+
+<h2 id="experience-title">Experience</h2>
+<div class="folio-timeline" aria-labelledby="experience-title">
   <article class="folio-timeline-item"><div class="folio-timeline-date">Jul 2025 – Present</div><div><span class="folio-tag">Professional · Bengaluru</span><h2>Machine Learning Engineer · Adobe</h2><p>As a machine learning engineer, I work on AI safety guardrails and on-device inference of diffusion models.</p></div></article>
   <article class="folio-timeline-item"><div class="folio-timeline-date">Jan – May 2025</div><div><span class="folio-tag">Teaching · IIT Kanpur</span><h2>Teaching Assistant · Control Systems Analysis</h2><p>Managed course logistics and academic support for undergraduate students in Control Systems Analysis.</p></div></article>
   <article class="folio-timeline-item"><div class="folio-timeline-date">Dec 2024 – Jun 2025</div><div><span class="folio-tag">Research · IIT Kanpur</span><h2>Undergraduate Research Assistant · AirComp</h2><p>With Dr. Ajit K. Chaturvedi, studied low-complexity receiver architectures for over-the-air computation and developed a vector decomposition approach to optimize cost and energy.</p></div></article>
