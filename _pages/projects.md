@@ -90,7 +90,7 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
   <ol class="folio-paper-list">
     <li><span class="folio-paper-meta">2026 · IEEE Wireless Communications Letters</span><a href="https://doi.org/10.1109/LWC.2026.3677126" target="_blank" rel="noopener noreferrer">Reduced RF Chains Using Fixed Phase Shifters for Over-the-Air Computation <span aria-hidden="true">↗</span></a></li>
     <li><span class="folio-paper-meta">2026 · Research paper</span><span class="folio-paper-title">Influence Enhancement in Opinion Dynamics Using Edge Modification: A Kron Reduction-Based Approach</span></li>
-    <li><span class="folio-paper-meta">IEEE Control Systems Letters · Under review</span><span class="folio-paper-title">Topological Insights for Edge modifications to Enhance Influence in Friedkin-Johnsen Model</span></li>
+    <li><span class="folio-paper-meta">2026 · Research paper</span><span class="folio-paper-title">Topological Insights for Edge modifications to Enhance Influence in Friedkin-Johnsen Model</span></li>
   </ol>
 </section>
 
@@ -103,6 +103,7 @@ description: Machine learning, robotics, and algorithms projects by Aravind Sesh
   <article class="folio-card folio-project"><div class="folio-project-visual folio-project-visual--a" aria-hidden="true"><span>03</span></div><span class="folio-card-number">Aug – Nov 2024 / Cyber-physical systems</span><h2>Resilient control execution</h2><p>Worked on a dynamic programming algorithm for control skips during false data injection attacks and trained models to predict attack behavior.</p><span class="folio-tag">Control · GRU · Dynamic programming</span><p class="folio-project-link"><a href="https://github.com/kn-joshua/Design-and-Deployment-of-Resilient-Control-Execution-Patterns">View code ↗</a></p></article>
   <article class="folio-card folio-project"><div class="folio-project-visual folio-project-visual--b" aria-hidden="true"><span>04</span></div><span class="folio-card-number">Jan – Apr 2025 / Algorithms</span><h2>Randomized Quick Sort: A Complete Analysis</h2><p>Derived a strong concentration bound for the number of comparisons in randomized quicksort.</p><span class="folio-tag">Randomized algorithms</span><p class="folio-project-link"><a href="https://github.com/kn-joshua/CS648-Randomized-QuickSort/tree/main">View code ↗</a></p></article>
   <article class="folio-card folio-project"><div class="folio-project-visual folio-project-visual--a" aria-hidden="true"><span>05</span></div><span class="folio-card-number">2022 – 2023 / Aerial robotics</span><h2>FPV drone navigation</h2><p>As part of Team Aerial Robotics, learned to work with ROS and Gazebo while simulating first-person-view drone racing scenarios.</p><span class="folio-tag">ROS · Gazebo · Computer vision</span></article>
+  <article class="folio-card folio-project"><div class="folio-project-visual folio-project-visual--b" aria-hidden="true"><span>06</span></div><span class="folio-card-number">May – Jul 2022 / Robotics Club, IIT Kanpur</span><h2>Micromouse</h2><p>Built an Arduino-based maze-solving robot, integrating motor control with flood fill, BFS, DFS, and Dijkstra’s algorithm for navigation.</p><span class="folio-tag">Arduino · Path planning · Robotics</span></article>
 </div>
 </section>
 </div>
